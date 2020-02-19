@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body {
+    background-color: #36404A;
+}
+
+table {
+    margin-left: 10px;
+}
+
+td {
+    border: 3px solid #fff;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+th {
+    color: rgb(0, 255, 76);
+    padding: 2px;
+    font-size: 20px;
+}
+
+h3 {
+    color: #fff;
+}
+
+.container {
+    margin: 50px 0px 0px 100px;
+    display: flex;
+    align-items: center;
+}
+
+.EnterIntoInput {
+    display: flex;
+    width: 650px;
+    align-items: center;
+    margin: 50px 0px 0px 100px;
+    font-size: 25px;
+    background-color: #2B2B2B;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    transition: all .3s;
+}
+
+.EnterIntoInput:hover {
+    box-shadow: 8px 8px 10px rgb(0, 0, 0);
+}
+
+.vertexInput {
+    margin-left: 10px;
+    font-size: 25px;
+    background-color: #36404A;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+button:active, button:focus {
+    outline: none;
+}
+
+.btnCreateVertex {
+    margin-left: 30px;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: #07d846;
+    border-radius: 3px;
+    border: 2px solid #07d846;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btnCreateVertex:hover {
+    color: #fff;
+    background-color: #07d846;
+    box-shadow: 0px 0px 20px #07d846;
+}
+
+.dataEntry {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0px 0px 100px;
+}
+
+.dataEntry .first {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 25px;
+    background-color: #2B2B2B;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    transition: all .3s;
+}
+
+.dataEntry .first:hover {
+    box-shadow: 8px 8px 10px rgb(0, 0, 0);
+}
+
+.dataEntry .inputOfNumbers {
+    margin-left: 10px;
+    font-size: 25px;
+    background-color: #36404A;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding-left: 5px;
+}
+
+
+.btnDeleteVertex {
+    margin-left: 30px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FF4D4D;
+    border-radius: 3px;
+    border: 2px solid #FF4D4D;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btnDeleteVertex:hover {
+    color: #fff;
+    background-color: #FF4D4D;
+    box-shadow: 0px 0px 20px #FF4D4D;
+}
+
+.nameOfMatrixB {
+    margin-left: 30px;
+}
+
+.outMatrixs {
+    margin-left: 100px;
+    margin-top: 20px;
+    display: none;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: #07d846;
+    border-radius: 3px;
+    border: 2px solid #07d846;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.outMatrixs:hover {
+    color: #fff;
+    background-color: #07d846;
+    box-shadow: 0px 0px 20px #07d846;
+}
+
+.nameOfMatrixA, .nameOfMatrixB {
+    display: none;
+}
+
