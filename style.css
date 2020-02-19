@@ -169,3 +169,84 @@ button:active, button:focus {
     display: none;
 }
 
+@media screen and (min-width: 320px) and (max-width: 414px) {
+    .EnterIntoInput {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        font-size: 20px;
+        padding: 0;
+        border-radius: 0;
+    }    
+    .btnCreateVertex {
+        margin-left: 0;
+        margin-right: 10px;
+        padding: 2px 5px;
+        font-size: 15px;
+    }
+    .vertexInput {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+        text-align: center;
+        border: 2px solid #fff;
+    }
+    label {
+        margin-left: 10px;
+    }
+    .dataEntry {
+        display: flex;
+        align-items: stretch;
+        margin: 20px 0 0 0;
+    }
+    .dataEntry .first {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 20px;
+        padding: 3px 5px;
+        border-radius: 0;
+    }
+    .dataEntry .inputOfNumbers {
+        margin-left: 10px;
+        font-size: 20px;
+        background-color: #36404A;
+        border: none;
+        border-radius: 2px;
+        outline: none;
+        color: #fff;
+        border: 2px solid #fff;
+        padding-left: 5px;
+        width: 100px;
+    }
+    .outMatrixs {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+        padding: 5px 15px;
+        font-size: 20px;
+        border-radius: 0;
+    }
+    .container {
+        position: relative;
+        margin: 50px 0 0 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .forLine {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .nameOfMatrixB {
+        margin-left: 0;
+    }
+    
+    .lastTable {
+        margin-top: 20px;
+    }
+}
