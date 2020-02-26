@@ -47,13 +47,13 @@ function outMatrixA() {
     for (let t = 0; t < dataOfInputs.length; t++) {
         arr[t] = dataOfInputs[t].split(' ');
     }
-
     for (let el in arr) {
         arr[el] = arr[el].map(parseFloat);
     }
-
+    console.group(arr);
+    console.groupEnd();
     const fragment = document.createDocumentFragment();
-    for (let i = 0; i< dataOfInputs.length + 1; i++) {
+    for (let i = 0; i < dataOfInputs.length + 1; i++) {
         const tr = document.createElement('tr');
         for (let c = 0; c < dataOfInputs.length + 1; c++) {
             if (i === 0) { // если первая строчка
@@ -107,6 +107,8 @@ function outMatrixB() {
     let lineMas = sumOfArcs.filter(Number);
     sumOfArcs = sumOfArcs.length; // количество дуг
 
+    console.log(lineMas);
+
     let numberOfArcs = [];
     let iteration = 1;
     numberOfArcs = arr.map(el => {
@@ -114,7 +116,7 @@ function outMatrixB() {
             return iteration++;
         });
     })
-    
+    console.log(numberOfArcs);
     const fragment = document.createDocumentFragment();
     for (let i = 0; i < dataOfInputs.length + 1; i++) {
         const tr = document.createElement('tr');
@@ -137,19 +139,21 @@ function outMatrixB() {
                 }
                 else {
                     const td = document.createElement('td');
-                    td.textContent = 0;
                     if (numberOfArcs[i - 1].indexOf(c) != -1) { // беру массив данной строчки и проверяю есть ли там нужное число
                         td.textContent = 1;
                     }
                     else if (lineMas[c - 1] == i){
                         td.textContent = -1;
                     }
-                    console.log(lineMas[c - 1], `${i} | ${c}`);
+                    else {
+                        td.textContent = 0;
+                    }
+                    // console.log(lineMas[c - 1], `${i} | ${c}`);
                     tr.appendChild(td);
                 }
             }
         }
-        fragment.appendChild(tr); // добавляем первую таблицу в фрагмент (А)
+        fragment.appendChild(tr); // добавляем вторую таблицу в фрагмент (B)
     }
     nameOfMatrixB.style.display = 'block';
     tableB.textContent = '';
